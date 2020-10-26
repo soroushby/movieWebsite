@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "movieWebsite"
+    }
+  },
+  "defaultProject": "movieWebsite",
+  "cli": {
+    "analytics": "d6d76333-d7f5-4900-88ce-64bcd3d57653"
+  }
 }
