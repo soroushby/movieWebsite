@@ -1,5 +1,39 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" #sidenav>Sidenav content</mat-sidenav>
+  <mat-sidenav class="sidenav" #sidenav>
+    <mat-nav-list
+      role="list"
+      fxLayoutAlign="center center"
+      fxLayout="column"
+      fxLayoutAlign="center end"
+    >
+      <mat-list-item
+        role="listitem"
+        fxLayoutAlign="center center"
+        routerLink="/home"
+        (click)="sidenav.close()"
+        class="matlist"
+        >Home</mat-list-item
+      >
+
+      <mat-list-item
+        role="listitem"
+        fxLayoutAlign="center center"
+        routerLink="/movies/addMovies"
+        (click)="sidenav.close()"
+        class="matlist"
+        >add movies</mat-list-item
+      >
+
+      <mat-list-item
+        role="listitem"
+        fxLayoutAlign="center center"
+        routerLink="/loadMovies"
+        (click)="sidenav.close()"
+        class="matlist"
+        >load patients</mat-list-item
+      >
+    </mat-nav-list>
+  </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar
       class="res"
@@ -29,18 +63,18 @@
           </li>
           <li class="nav-list__item">
             <a
-              routerLink="/patients/addPatients"
+              routerLink="/movies/addMovies"
               routerLinkActive="active"
               fxLayoutAlign="center center"
-              >add patients</a
+              >add movies</a
             >
           </li>
           <li class="nav-list__item">
             <a
-              routerLink="/patients/loadPatients"
+              routerLink="/loadMovies"
               routerLinkActive="active"
               fxLayoutAlign="center center"
-              >load patients</a
+              >load movies</a
             >
           </li>
         </ul>
